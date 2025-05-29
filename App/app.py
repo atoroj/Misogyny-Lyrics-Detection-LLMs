@@ -7,7 +7,7 @@ import csv
 
 from unsloth import FastLanguageModel
 model, tokenizer = FastLanguageModel.from_pretrained(
-    model_name = "../../models/Model_DeepSeek-R1-Distill-Llama-8B-unsloth-bnb-4bit-CoT_GPT4o-R_16-Alpha_16-LR_2e-05-Tarea_1",   # Modelo base
+    model_name = "atorojaen/DeepSeek-R1-MiSonGyny",   # Modelo base
     max_seq_length = 2048,
     dtype = torch.float16,
     load_in_4bit = True,
@@ -83,12 +83,7 @@ with gr.Blocks() as demo:
     result = gr.Textbox(label="Respuesta del modelo", lines=10)
     
     btn_analizar = gr.Button("Analizar")
-    btn_correcto = gr.Button("Respuesta correcta")
-    btn_incorrecto = gr.Button("Respuesta incorrecta")
     
     btn_analizar.click(fn=detect_misogyny, inputs=user_input, outputs=result)
-    
-    btn_correcto.click(fn=save_flag, inputs=[user_input, result, gr.State("correcto")], outputs=result)
-    btn_incorrecto.click(fn=save_flag, inputs=[user_input, result, gr.State("incorrecto")], outputs=result)
 
 demo.launch()
