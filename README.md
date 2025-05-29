@@ -36,6 +36,12 @@ Este repositorio contiene el trabajo realizado para el Trabajo de Fin de Grado *
 4. **mysongyny_SIN_CoT_Tarea2.ipynb**: Mejores resultados en Task 2. Prompt directo.
 3. **longformerbaseline**:  Primer baseline desarrollado, basado en un modelo Longformer, usado como referencia.
 
+### Repositorios en HuggingFace
+1. [**DeepSeekR1-MiSonGyny para Tarea 1**](https://huggingface.co/atorojaen/DeepSeek-R1-MiSonGyny)
+2. [**Llama3.1-MiSonGyny para Tarea 1**](https://huggingface.co/atorojaen/Llama3.1-MiSonGyny)
+3. [**Qwen3-MiSonGyny para Tarea 1**](https://huggingface.co/atorojaen/Qwen3-MiSonGyny)
+4. [**Qwen3-MiSonGyny para Tarea 2**](https://huggingface.co/atorojaen/Qwen3-MiSonGyny-Task2)
+
 ### Resultados
 
 Los resultados obtenidos se encuentran en la carpeta `Resultados/`. El sistema propuesto obtuvo la **segunda posición** en ambas tareas de la competición.
