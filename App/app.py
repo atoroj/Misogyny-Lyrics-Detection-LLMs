@@ -79,11 +79,14 @@ def save_flag(user_text, response, flag_type):
     return f"Guardado flag: {flag_type}"
 
 with gr.Blocks() as demo:
+    gr.Markdown("# Detector de misoginia en letras de canciones")  # Título principal
+    gr.Markdown("Este sistema analiza letras de canciones en español y detecta contenido misógino utilizando el modelo DeepSeek R1 entrenado.")
     user_input = gr.Textbox(label="Letra de canción", lines=10)
     result = gr.Textbox(label="Respuesta del modelo", lines=10)
     
     btn_analizar = gr.Button("Analizar")
     
     btn_analizar.click(fn=detect_misogyny, inputs=user_input, outputs=result)
+
 
 demo.launch()
