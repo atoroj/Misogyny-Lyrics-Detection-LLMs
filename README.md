@@ -30,9 +30,9 @@ Este repositorio contiene el trabajo realizado para el Trabajo de Fin de Grado *
 ### Cuadernos Utilizados
 
 
-1. **mysongyny_CON_CoT_Tarea1.ipynb**:  Fine-tuning con DeepSeek-R1 usando razonamiento (Chain of Thought) para Tarea 1.
+1. **mysongyny_CON_CoT_Tarea1.ipynb**: Fine-tuning con DeepSeek-R1 usando razonamiento (Chain of Thought) para Tarea 1.
 2. **mysongyny_CON_CoT_Tarea2.ipynb**: Fine-tuning con DeepSeek-R1 usando razonamiento (Chain of Thought) para Tarea 2.
-3. **mysongyny_SIN_CoT_Tarea1**: Mejores resultados en Task 1. Prompt directo.
+3. **mysongyny_SIN_CoT_Tarea1.ipynb**: Mejores resultados en Task 1. Prompt directo.
 4. **mysongyny_SIN_CoT_Tarea2.ipynb**: Mejores resultados en Task 2. Prompt directo.
 3. **longformerbaseline**:  Primer baseline desarrollado, basado en un modelo Longformer, usado como referencia.
 
